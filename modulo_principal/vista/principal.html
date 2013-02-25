@@ -1,0 +1,185 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>Proyecto</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="edit-Type" edit="text/html; charset=utf-8">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type='text/javascript' src='./modulo_principal/javascript/principal.js'></script>
+<script type='text/javascript' src='./modulo_principal/javascript/loginquery.js'></script>
+<link rel="stylesheet" type="text/css" href="./modulo_principal/css/principal.css" />
+<link rel="stylesheet" type="text/css" href="./modulo_principal/css/login.css" />
+</head>
+<body>
+
+    <div id="edgesline" class="edges"></div>
+	<div id="tabs">
+    <ul id="tabMenu">
+  
+        <li class="regular"><a href="#login-box" class="login-window">Login</a></li>
+        <li class="regular"><a href="#registro-box" class="registro-window">Registro</a></li>
+        <li class="dropdown"><a href="#tab3">Olvide la Contraseña</a></li>
+        <li class="dropdown"><a href="#tab4">Contacto</a></li>
+        <li class="edges">&nbsp;</li>
+        
+    </ul>
+  
+</div>
+
+<div id="tabContainer">
+<ul id="tabPanes">
+    
+    <li id="tab2">
+        
+        <p>
+            
+            <div class="formcontainer">
+                <div class="text">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="desusername" id="desusername" alt="Mínimo 5 caracteres">
+                </div>
+                <div class="text">
+                    <label for="despassword">Password</label>
+                    <input type="text" name="despassword" id="despassword" alt="Mínimo 5 caracteres">
+                </div>
+                <div class="text">
+                    <label for="password">Confirma Password</label>
+                    <input type="text" name="confpassword" id="confpassword" alt="Asegurate de que coincide con el password anterior">
+                </div>
+
+            </div>
+            
+            
+            <center>
+                <div class="block" id="bluebutton">
+                    <button>Registro</button>
+                </div>
+            </center>
+            
+        </p>
+    </li>
+
+    <li id="tab3">
+        
+        <p>
+            <div class="formcontainer">
+                
+                <div class="text">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username" id="username" alt="Comprueba que tu usuario sea correcto.">
+                </div>
+                <br>    
+         
+                Por favor, introduzca su usuario. Click 'Enviar' y te enviaremos un e-mail con su contraseña
+                <center>
+
+                    <div class="block" id="bluebutton">
+                        <button>Enviar</button>
+                    </div>
+                </center>
+                
+            </p>
+            </li>
+                
+                <li id="tab4">
+                    
+                    <p>
+
+                        
+                        <div class="formcontainer">
+                            <div class="text">
+                                <label for="yourname">Tu E-Mail:</label>
+                                <input type="text" name="youremail" id="youremail" alt="Por favor, introduce un e-mail, válido">
+                            </div>
+                            
+                            <div class="text">
+                                <label for="msgsubject">Subject</label>
+                                <input type="text" name="msgsubject" id="msgsubject" alt="What is your message concerning?">
+
+                            </div>
+                            <div class="text">
+                                <label for="password">Message</label>
+                                <input type="text" name="msgtext" id="msgtext" alt="Your Message (Please keep it short). We'll get back to you asap!">
+                            </div>
+                        </div>
+                        
+                        
+                        <center>
+                            <div class="block" id="bluebutton">
+
+                                <button>Send</button>
+                            </div>
+                        </center>
+                    </div>
+                        
+                    </p>
+                </li>                
+
+            </ul>
+            
+            </div>
+		<div id="contenido">
+			<div id="tabla_mapa">
+		
+			
+
+			</div>		
+	</div>
+<!-- *******************************EMERGENTES********************************************************** -->
+<div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="./modulo_principal/img/close.gif" class="btn_close" title="Close Window" alt="Cerrar" /></a>
+          <form method="post" class="signin" action="./modulo_principal/controlador/controlador_principal.php">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span>Usuario o email</span>
+                <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Usuario">
+                </label>
+                <label class="password">
+                <span>Contraseña</span>
+                <input id="password" name="password" value="" type="password" placeholder="Contraseña">
+                </label>
+                <button class="submit button" type="submit">Login</button>
+				<div id="login_redes">
+					<a href="./modulo_principal/controlador/login.php?app=facebook">
+						<img src="./modulo_principal/img/facebook_login_bt.png" alt="facebook_login_button" />
+					</a>
+					<a href="./modulo_principal/controlador/login.php?app=twitter">
+						<img src="./modulo_principal/img/twitter_login_bt.png" alt="twitter_login_button" />
+					</a>
+					<a href="./modulo_principal/controlador/login.php?app=google">
+						<img src="./modulo_principal/img/googleplus_login_bt.png" alt="googleplus_login_button" />
+					</a>
+				</div>
+                <p>
+                <a class="forgot" href="#">¿Olvidaste la Contraseña?</a>
+                </p>        
+                </fieldset>
+          </form>
+</div>
+
+<div id="registro-box" class="login-popup">
+        <a href="#" class="close"><img src="./modulo_principal/img/close.gif" class="btn_close" title="Close Window" alt="Cerrar" /></a>
+          <form method="post" class="signin" action="./modulo_principal/controlador/controlador_principal.php">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span>Usuario</span>
+                <input id="username" name="usuari_usuario" value="" type="text" placeholder="Usuario">
+                </label>
+                <label class="password">
+                <span>Contraseña</span>
+                <input id="password" name="password_usuario" value="" type="password" placeholder="Contraseña">
+                </label>
+				<label class="password">
+                <span>Confirmar Contraseña</span>
+                <input id="confpass" name="config_passwd" value="" type="password" placeholder="Repetir Contraseña">
+                </label>
+				<label class="password">
+                <span>Correo Electronico</span>
+                <input id="correo" name="correo_electronico" value="" type="password" placeholder="Correo Electronico">
+                </label>
+                <button class="submit button" type="submit">Registro</button>      
+                </fieldset>
+          </form>
+</div>
+</body>
+</html>
