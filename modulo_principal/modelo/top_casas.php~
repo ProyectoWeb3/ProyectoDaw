@@ -1,0 +1,35 @@
+<?php
+function top_casas(){
+
+	global $servidor, $bd, $usuario, $contrasenia;
+	try{
+		@ $db = new mysqli($servidor, $usuario, $contrasenia);
+		if (mysqli_connect_errno() != 0)
+			throw new Exception('Error conectando:'.mysqli_connect_error(), mysqli_connect_errno());
+			
+		$db->select_db($bd);
+		if ($db->errno != 0)
+			throw new Exception('Error seleccionando bd:'.$db->error, $db->errno);
+			
+		$consulta = "select * from casas where ORDER BY (puntuacion) DESC limit 4";
+		
+		$resultado = $db->query($consulta);
+		if ($db->errno != 0)
+			throw new Exception('Error realizando consulta:'.$db->error, $db->errno);
+		if ($resultado->num_rows > 0){
+			return $resultado;
+		}
+		$db->close();
+	}catch (ExcepcionEnTransaccion $e){
+		return 'error';
+		$db->rollback();
+		$db->close();
+	}catch (Exception $e){
+		echo $e->getMessage();
+		if (mysqli_connect_errno() == 0)
+			$db->close();
+		exit();
+	}
+}
+
+?>

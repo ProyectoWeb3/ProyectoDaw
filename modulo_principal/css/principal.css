@@ -1,11 +1,4 @@
-body {
 		
-background-image:url('../img/rajoy.jpg');
-}
-		
-a{
-	text-decoration: none;
-}		
 ul#tabPanes 
 {
 		
@@ -190,19 +183,9 @@ text-decoration: none;
 
 }
 
-#contenido{
-	width: 100%;
-	margin:auto;
-
+@media screen and (max-width:600px){  
+	                      
 }
-#tabla_mapa{
-	
-	border: 1px solid rgb(25, 37, 63); 
-	height: 300px;
-	width: 600px; 
-	position:relative;
-	float: right;
-	
 
-}
+
 
