@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="es" />
+	<title>Casas rurales - Alquiler casas rurales, hoteles rurales, turismo rural</title>
+
+	<link rel="stylesheet" type="text/css" href="../../modulo_principal/css/calendario.css" media="screen" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../modulo_principal/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="../css/perfil_usuario.css" />
+
+	<script>
+		$(document).ready(function(){
+			$("#perfil").click(function(){
+				$("#cambiar_datos").css({"display":"none"});
+				$("#feed_casas").css({"display":"block"});
+				$("#cambiar_casas").css({"display":"none"});
+				$("#baja").css({"display":"none"});
+			});
+			$("#change").click(function(){
+				$("#cambiar_datos").css({"display":"block"});
+				$("#feed_casas").css({"display":"none"});
+				$("#cambiar_casas").css({"display":"none"});
+				$("#baja").css({"display":"none"});
+			});
+			$("#changeCasas").click(function(){
+				$("#cambiar_datos").css({"display":"none"});
+				$("#feed_casas").css({"display":"none"});
+				$("#cambiar_casas").css({"display":"block"});
+				$("#baja").css({"display":"none"});
+			});
+			$("#off").click(function(){
+				$("#cambiar_datos").css({"display":"none"});
+				$("#feed_casas").css({"display":"none"});
+				$("#cambiar_casas").css({"display":"block"});
+				$("#baja").css({"display":"block"});
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+	<div id="centro">
+		<div class="mapa-tope">
+			<p>Perfil Usuario</p>				
+		</div>
+		<div class="mapa-separa"></div>
+		
+		<div id="tab4">
+			<div id="foto_perfil">
+				<img src="../img_perfil/default_user.png" height=150px; width=156px;></img>			
+			</div>
+			<div id="off"><a href="#">Darme de Baja</a></div>
+			<div id="info_perfil">
+				<ul>
+					<li><b>Nombre: FERRI</b></li>	
+					<li><a href="#" id="perfil">Perfil</a></li>
+					<li><a href="#" id="change">Modificar datos de Perfil</a></li>
+					<li><a href="#" id="changeCasas">Administrar mis Casas</a></li>		
+				</ul>
+			</div>
+			<div id="detodo">
+				<div id="feed_casas">
+					<h2>Casas Visitadas por FERRI</h2>
+					<div class="casa">
+						<b>Nombre Casa</b>
+						</br>
+						<img src="../img_perfil/default_user.png" height=80px; width=100px;></img>
+						<p>ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF </p>
+					</div>
+					<div class="casa">
+						<b>Nombre Casa</b>
+						</br>
+						<img src="../img_perfil/default_user.png" height=80px; width=100px;></img>
+						<p>ASDF ASDF ASDF ASDF ASDF ASDF A ASDF ASDF ASDF ASDF ASDFSDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF </p>
+					</div>
+					<div class="casa">
+						<b>Nombre Casa</b>
+						</br>
+						<img src="../img_perfil/default_user.png" height=80px; width=100px;></img>
+						<p>ASDF ASDF ASDF ASDF ASDF ASDF ASDF  ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF ASDF </p>
+					</div>
+				</div>
+
+				<div id="cambiar_datos" style="display:none">
+					<table>
+						<h2>Cambiar datos Perfil</h2>
+						<tr>
+							<td><h3>Datos Personales</h3></td>
+						</tr>
+						<tr>
+							<td>Nombre</td>
+							<td><input type="text"></input></td>
+						</tr>
+						<tr>
+							<td>Primer Apellido</td>
+							<td><input type="text"></input></td>
+						</tr>
+						<tr>
+							<td>Segundo Apellido</td>
+							<td><input type="text"></input></td>
+						</tr>
+						<tr>
+							<td><h3>Datos Contraseña</h3></td>
+						</tr>
+						<tr>
+							<td>Contraseña</td>
+							<td><input type="text"></input></td>
+						</tr>
+						<tr>
+							<td>Repetir Contraseña</td>
+							<td><input type="text"></input></td>
+						</tr>
+						<tr>
+							<td><h3>Datos Correo Electronico</h3></td>
+						</tr>
+						<tr>
+							<td>Correo Electronico</td>
+							<td><input type="text"></input></td>
+						</tr>	
+						<tr>
+							<td>Confirmar Correo Electronico</td>
+							<td><input type="text"></input></td>
+						</tr>
+	
+						<tr>
+							<td></td>
+							<td><input type="submit" value="Cambiar"></input></td>
+						</tr>			
+					</table>			
+				</div>
+				<div id="cambiar_casas" style="display:none">
+					<h2>Administrar mis Casas</h2>
+					<div class="casa">
+						<div class="editHouse">
+							<p>
+								<a href="#" >Eliminar 
+									<img src="../img/eliminar.png" height=20px; width=20px;></img>
+								</a>
+							</p>
+							<p>
+								<a href="#" >Editar
+									<img src="../img/modificar.png" height=20px; width=20px;></img>
+								</a>
+							</p>
+						</div>
+						<b>Nombre Casa</b>
+						</br>
+						<img src="../img_perfil/default_user.png" height=80px; width=100px;></img>
+					</div>
+					<div class="casa">
+						<div class="editHouse">
+							<p>
+								<a href="#" >Eliminar 
+									<img src="../img/eliminar.png" height=20px; width=20px;></img>
+								</a>
+							</p>
+							<p>
+								<a href="#" >Editar
+									<img src="../img/modificar.png" height=20px; width=20px;></img>
+								</a>
+							</p>
+						</div>
+						<b>Nombre Casa</b>
+						</br>
+						<img src="../img_perfil/default_user.png" height=80px; width=100px;></img>
+					</div>
+					<div class="casa">
+						<div class="editHouse">
+							<p>
+								<a href="#" >Eliminar 
+									<img src="../img/eliminar.png" height=20px; width=20px;></img>
+								</a>
+							</p>
+							<p>
+								<a href="#" >Editar
+									<img src="../img/modificar.png" height=20px; width=20px;></img>
+								</a>
+							</p>
+						</div>
+						<b>Nombre Casa</b>
+						</br>
+						<img src="../img_perfil/default_user.png" height=80px; width=100px;></img>
+					</div>
+				</div>
+				<div id="baja" style="display:none">
+					<h2>Darse de Baja</h2>
+					<p><b>Estás seguro de que quieres darte de baja ?<b></p>
+					<input type="submit" value="Aceptar">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+

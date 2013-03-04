@@ -1,6 +1,10 @@
 <?php session_start();
 //require './moduloprincipal/conexion.php';
 
+require('./modulo_principal/RSS/rss.php');
+$newsEU = newsEU();
+
+
 //MOSTRAR USUARIO
 if(!empty($_GET['user'])){
 	if($_GET['user']=="sn"){

@@ -1,0 +1,115 @@
+a{
+	text-decoration:none;
+}
+h2{
+	margin-left: 0.5em;
+}
+img{
+	margin: 0.5em;
+	
+}
+
+#centro{
+	width: 55.22%;
+	height: 600px;
+}
+
+#tab4{
+	border: 2px solid black;
+	width: 99.9%;
+	height: 600px;
+	background-image: url(../img/pastel-contenido.jpg);
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#off{
+	position:absolute;
+	float:right;
+	bottom:25%;
+	right:1%;
+	width: 13%;
+	height: 3%;
+	line-height: 200%;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: helvetica, arial;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	position: relative;
+
+	/* BACKGROUND GRADIENTS */
+	background-image: url(../img/madera.png);
+
+
+	/* BORDER RADIUS */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+	border: 1px solid #368DBE;
+	border-top: 1px solid #c3d6df;
+
+
+	/* TEXT SHADOW */
+
+	text-shadow: 1px 1px 1px black;
+
+	/* BOX SHADOW */
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 1px 3px black;
+	box-shadow: 0 1px 3px black;
+}
+#off a{
+	color:white;
+}
+
+#foto_perfil, #info_perfil{
+	margin-top: 0.5em;
+	margin-left: 1em;
+	width: 23.5%;
+}
+#foto_perfil{
+	border: solid 5px #000;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
+	box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
+}
+#info_perfil ul{	
+  	list-style-type: none;
+	display:inline;
+	
+}
+#info_perfil li{
+	margin-bottom:1em;
+	margin-left: 5%;
+}
+#info_perfil b, #info_perfil a{
+	font-size: 1.2em;
+}
+#detodo{
+	position:relative;
+	border-left: 1px solid black;
+	padding-left: 1.5em;
+	float: right;
+	bottom: 25%;
+	width: 65%;
+	height: 80%;
+}
+.casa{
+	border-bottom: 2px dashed brown;
+	margin-top: 1em;
+	padding: 0.5em;
+}
+
+.editHouse{
+	position:absolute;
+	left:90%;
+}

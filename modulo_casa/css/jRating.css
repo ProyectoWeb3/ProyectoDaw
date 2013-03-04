@@ -1,0 +1,61 @@
+/*********************/
+/** jRating CSS **/
+/*********************/
+
+.rating{
+float:right;
+}
+
+/**Div containing the color of the stars */
+.jRatingAverage {
+background-color:#f62929;
+position:relative;
+top:0;
+left:0;
+z-index:2;
+height:100%;
+}
+.jRatingColor {
+background-color:#f4c239; /* bgcolor of the stars*/
+position:relative;
+top:0;
+left:0;
+z-index:2;
+height:100%;
+}
+
+/** Div containing the stars **/
+.jStar {
+position:relative;
+left:0;
+z-index:3;
+}
+
+/** P containing the rate informations **/
+p.jRatingInfos {
+position: absolute;
+z-index:9999;
+background:	transparent url('../images/bg_jRatingInfos.png') no-repeat;
+color:	#FFF;
+display:	none;
+width:	91px;
+height:	29px;	
+font-size:16px;
+text-align:center;
+padding-top:5px;
+}
+p.jRatingInfos span.maxRate {
+color:#c9c9c9;
+font-size:14px;
+}
+body {margin:15px;font-family:Arial;font-size:13px}
+		a img{border:0}
+		.datasSent, .serverResponse{margin-top:20px;width:470px;height:73px;border:1px solid #F0F0F0;background-color:#F8F8F8;padding:10px;float:left;margin-right:10px}
+		.datasSent{width:200px;position:fixed;left:680px;top:0}
+		.serverResponse{position:fixed;left:680px;top:100px}
+		.datasSent p, .serverResponse p {font-style:italic;font-size:12px}
+		.exemple{margin-top:15px;}
+		.clr{clear:both}
+		pre {margin:0;padding:0}
+		.notice {background-color:#F4F4F4;color:#666;border:1px solid #CECECE;padding:10px;font-weight:bold;width:600px;font-size:12px;margin-top:10px}
+

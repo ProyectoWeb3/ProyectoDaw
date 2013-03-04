@@ -47,13 +47,11 @@ function casasRSS(){
 		$desc = substr($item_desc, $inidesc );
 		
 		//IMAGE
-		$iniimg = strpos($item_desc, "http://desdeasturias.com/imagenes/");
+		$iniimg = strpos($item_desc, "http://desdeasturias.com/imagenes/")+34;
 		$finimg = strpos($item_desc, ".jpg&amp");
-		$posfin = ( $finimg + 34 ) - $iniimg;
+		$posfin = $finimg - $iniimg;
 		$nomimg = substr($item_desc, $iniimg, $posfin);
-		$img = 'http://desdeasturias.com/imagenes/'.$nomimg.'.jpg';		
-
-		alta_casa($item_title, $desc, $img);
+		$img = 'http://desdeasturias.com/imagenes/'.$nomimg.'.jpg';
 	}
 }
 

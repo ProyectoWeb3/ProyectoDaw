@@ -167,6 +167,11 @@
 </map>
 <div id="new-eu">
 	<!--NEWS-->
+	<?php
+		for($i=0; i < 4; i++){
+			echo newsEU[0][i];
+		}
+	?>
 </div>
 
 </div>

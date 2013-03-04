@@ -49,7 +49,7 @@ function casasRSS(){
 		//IMAGE
 		$iniimg = strpos($item_desc, "http://desdeasturias.com/imagenes/");
 		$finimg = strpos($item_desc, ".jpg&amp");
-		$posfin = ( $finimg + 34 )- $iniimg;
+		$posfin = ( $finimg + 34 ) - $iniimg;
 		$nomimg = substr($item_desc, $iniimg, $posfin);
 		$img = 'http://desdeasturias.com/imagenes/'.$nomimg.'.jpg';		
 
